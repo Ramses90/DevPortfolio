@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+- source: /
+  destination: /devportfolio
+overwrite: true  
+hooks:
+  BeforeInstall:
+    - location: remove.sh
+  AfterInstall:
+    - location: permissions.sh
+      timeout: 120

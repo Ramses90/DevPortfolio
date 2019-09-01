@@ -25,7 +25,7 @@ SECRET_KEY = '7*l%=$klc-lb226(uiqj#(397u4bf_!2f0f$$h9@01evsk3*&8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition

@@ -1,3 +1,3 @@
 #!/bin/bash
-#rm -rf /var/www/html/_dboard
+rm -rf /devportfolio/*
 #mkdir /var/www/html/_dboard

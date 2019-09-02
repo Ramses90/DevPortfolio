@@ -11,8 +11,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Unittest Results</h2>
-                <p class='attribute'><strong>Start Time: </strong>2019-08-31 23:23:00</p>
-                <p class='attribute'><strong>Duration: </strong>14.90 s</p>
+                <p class='attribute'><strong>Start Time: </strong>2019-09-01 21:51:16</p>
+                <p class='attribute'><strong>Duration: </strong>14.50 s</p>
                 <p class='attribute'><strong>Summary: </strong>Total: 3, Pass: 2, Error: 1</p>
             </div>
         </div>
@@ -45,20 +45,20 @@
                             </td>
                         </tr>
                         <tr style="display:none;">
-                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"About"}
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"#about"}
   (Session info: chrome=76.0.3809.132)
 </p><p style="color:maroon;">Traceback (most recent call last):
-  File "/Users/ramsesmachado/Documents/DevPortfolio/DevPortfolio/DevPortfolio/SeleniumTest/Test/mywebtest.py", line 26, in test_search3
-    self.driver.find_element_by_link_text("About").click()
-  File "/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in find_element_by_link_text
+  File "mywebtest.py", line 25, in test_search3
+    self.driver.find_element_by_link_text("#about").click()
+  File "/Users/ramsesmachado/Documents/DevPortfolio/DevPortfolio/DevPortfolio/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in find_element_by_link_text
     return self.find_element(by=By.LINK_TEXT, value=link_text)
-  File "/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+  File "/Users/ramsesmachado/Documents/DevPortfolio/DevPortfolio/DevPortfolio/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
     'value': value})['value']
-  File "/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+  File "/Users/ramsesmachado/Documents/DevPortfolio/DevPortfolio/DevPortfolio/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
     self.error_handler.check_response(response)
-  File "/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+  File "/Users/ramsesmachado/Documents/DevPortfolio/DevPortfolio/DevPortfolio/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"About"}
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"#about"}
   (Session info: chrome=76.0.3809.132)
 
 </p>
@@ -74,7 +74,7 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 3, Pass: 2, Error: 1 -- Duration: 14.90 s
+                                Total: 3, Pass: 2, Error: 1 -- Duration: 14.50 s
                             </td>
                         </tr>
                     </tbody>

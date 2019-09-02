@@ -11,17 +11,17 @@ class MywebTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = webdriver.Chrome(
-            executable_path='SeleniumTest/drivers/chromedriver')
+            executable_path='/Users/ramsesmachado/Documents/DevPortfolio/DevPortfolio/DevPortfolio/SeleniumTest/drivers/chromedriver')
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
 
     def test_search(self):
         self.driver.get(
-            "http://ec2-18-218-65-248.us-east-2.compute.amazonaws.com:8000/")
+            "http://18.218.65.248:8000/")
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
     def test_search3(self):
-        self.driver.get("http://ec2-18-218-65-248.us-east-2.compute.amazonaws.com:8000/")
+        self.driver.get("http://18.218.65.248:8000/")
         self.driver.find_element_by_link_text("#about").click()
         self.driver.find_element_by_name("About").click()
 
